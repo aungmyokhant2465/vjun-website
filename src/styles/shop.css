@@ -1,0 +1,126 @@
+.video-container {
+  height: 80vh;
+}
+
+.video-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#shop-container > section {
+  margin-block: 3rem;
+  text-align: center;
+}
+
+.shop-container {
+  background-color: #f1f0f0;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.shop-cart {
+  width: 450px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.shop-cart-image {
+  background-color: red;
+  border-radius: 10px;
+  flex: 1 450px;
+}
+
+.shop-cart-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop-cart-content {
+  margin-block: 1rem;
+  max-height: 180px;
+  flex: 1 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .shop-container {
+    padding-inline: 0.1rem;
+  }
+
+  .shop-cart {
+    margin-inline: 0;
+  }
+}
+
+.shop-cart-content ul {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.shop-cart-content ul > li {
+  margin-block: 1rem;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+}
+
+.shop-cart-content ul > li:first-child {
+  grid-template-columns: 1fr;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+ul.shop-tag-container {
+  list-style-type: none;
+  list-style-position: outside;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button.tag-active {
+  border-bottom: 3px solid black;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+button:hover,
+button:focus {
+  background-color: aliceblue;
+}
+
+button:active {
+  background-color: #2e2b2b;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    margin: 1rem 1rem;
+  }
+  section p {
+    width: auto;
+  }
+  .video-container {
+    height: auto;
+  }
+
+  #shop-container > section {
+    margin-block: 1rem;
+    text-align: center;
+  }
+}
