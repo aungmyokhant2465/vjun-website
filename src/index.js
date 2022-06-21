@@ -39,13 +39,13 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <div>
-    <Header />
     <BrowserRouter>
+      <Header />
       <ApolloProvider client={client}>
         <App />
       </ApolloProvider>
+      <Footer />
     </BrowserRouter>
-    <Footer />
   </div>,
   document.getElementById("root")
 );

@@ -15,7 +15,7 @@ function App() {
       <Route path="/shop" element={<Shop />} />
       <Route path="/download" element={<Download />} />
       <Route path="/brand" element={<Brand />} />
-      <Route path="/vlog" element={<Vlog />} />
+      <Route path="/blog/:id" element={<Vlog />} />
       <Route path="/about" element={<About />} />
     </Routes>
   );

@@ -12,3 +12,16 @@ export const SHOPS = gql`
     }
   }
 `;
+
+export const BLOG = gql`
+  query Blog($id: uuid!) {
+    blog_data_by_pk(id: $id) {
+      body
+      created_at
+      id
+      title
+      title_image_url
+      updated_at
+    }
+  }
+`;
