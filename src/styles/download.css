@@ -1,74 +1,103 @@
-.download-first-section, .download-second-section, .download-fourth-section {
-    text-align: center;
-    margin-block: 1.5rem;
+.download-first-section,
+.download-second-section,
+.download-fourth-section {
+  text-align: center;
+  /* margin: 1rem; */
 }
+
+.download-second-section {
+  padding-block: 1rem;
+}
+
+.download-content {
+  background-color: #edeef0;
+}
+
+.download-second-section .swiper-slide {
+  background: transparent;
+}
+
+/* .download-first-section {
+  margin: 1rem;
+} */
 
 /* fist section */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
 }
 
 .grid-container > div {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container > div > p {
+  text-align: left;
 }
 
 .grid-container .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: aqua;
-    box-shadow: 5px 5px 5px gray;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  background-position: center center;
+  background-size: 3rem 3rem;
+  background-repeat: no-repeat;
+  background-image: url(../static/icons/gif.svg);
 }
 
 /* second section */
 
 .screenshot-swiper {
-    height: 70vh;
+  height: 70vh;
 }
 
 .screenshot-swiper .swiper-slide img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .download-second-section p {
-    margin-block: 2.5rem;
+  margin-block: 2.5rem;
 }
 
 .btn-container {
-    margin-block: 3rem;
+  margin-block: 3rem;
 }
 
 .btn-container button {
-    text-transform: uppercase;
-    border: 0;
-    background-color: transparent;
-    padding: 5px 8px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 30px;
+  font-weight: bold;
 }
 
-.btn-container button:hover, .btn-container button:focus {
-    background-color: gray;
+.btn-container button:hover,
+.btn-container button:focus {
+  /* background-color: gray; */
+  background-color: #1b1a1a;
+  color: white;
 }
 
 .btn-container button:active {
-    background-color: #2E2B2B;
-    color: white;
+  background-color: #1b1a1a;
+  color: white;
 }
 
 /* fourth section */
 
 .screens-swiper {
-    height: 70vh;
+  height: 70vh;
 }
 
 .screens-swiper .swiper-slide > img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 /* .screens-swiper-pagination {
@@ -76,77 +105,95 @@
 } */
 
 .download-fourth-section p {
-    margin-block: 2.5rem;
+  margin-block: 2.5rem;
 }
 
 /* third section */
 
 .download-third-section {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    padding: 2.5rem;
-    background: rgb(5,5,5);
-    background: linear-gradient(90deg, rgba(5,5,5,1) 30%, rgba(255,255,255,1) 100%);
-    color: white;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2.5rem;
+  background: rgb(5, 5, 5);
+  background: linear-gradient(90deg, rgba(5, 5, 5, 0) 0%, #050505 97.76%);
 }
 
 .download-third-section > div:nth-child(2) {
-    width: 100%;
-    height: 100%;
-    background-image: url('../static/images/phone.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-image: url("../static/images/phone.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .download-third-section .download-btn-container > a:nth-child(1) {
-    display: inline-block;
-    width: clamp(80px, 10vw, 250px);
-    height: 100px;
-    background-image: url('../static/images/app_store.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin-right: 10px;
+  display: inline-block;
+  width: clamp(80px, 10vw, 250px);
+  height: 100px;
+  background-image: url("../static/images/appStoreLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 10px;
 }
 
 .download-third-section .download-btn-container > a:nth-child(2) {
-    display: inline-block;
-    width: clamp(80px, 10vw, 250px);
-    height: 100px;
-    background-image: url('../static/images/google_play.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+  display: inline-block;
+  width: clamp(80px, 10vw, 250px);
+  height: 100px;
+  background-image: url("../static/images/googlePlayLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .properties-container {
-    margin-block: 2rem;
+  margin-block: 2rem;
 }
 
 .mark-img {
-    width: 1rem !important;
-    height: 1rem !important;
-    margin-right: 5px;
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 500px) {
-    .grid-container .circle {
-        width: 20vw;
-        height: 20vw;
-    }
+  .grid-container .circle {
+    width: 17vw;
+    height: 17vw;
+    background-size: 2rem 2rem;
+  }
 
-    .properties-container .swiper-slide {
-        font-size: 10px;
-    }
+  .properties-container .swiper-slide {
+    font-size: 10px;
+  }
 
-    .download-third-section {
-        height: auto;
-        min-height: unset;
-        padding: 10px;
-    }
+  .download-third-section {
+    height: auto;
+    min-height: unset;
+    padding: 10px;
+  }
+
+  .grid-container {
+    gap: 1rem;
+  }
+
+  .download-second-section p,
+  .download-fourth-section p {
+    margin-block: 1rem;
+  }
+
+  .btn-container {
+    margin-block: 1rem;
+  }
+
+  .btn-container button {
+    font-size: 75%;
+    padding: 5px 13px;
+  }
 }

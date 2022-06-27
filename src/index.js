@@ -1,10 +1,11 @@
 import ReactDOM from "react-dom";
-import "./index.css";
 import "aos/dist/aos.css";
 import App from "./App";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom";
+import "./static/Lato/Lato-Regular.ttf";
+import "./static/Roboto/Roboto-Thin.ttf";
 
 import {
   ApolloClient,

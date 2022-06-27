@@ -1,31 +1,27 @@
-#shop-container .video-container {
-  height: 80vh;
-}
-
-#shop-container .video-container > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#shop-container > section {
-  margin-block: 3rem;
+#vlogs-container > section {
+  /* margin-block: 3rem; */
+  /* margin-top: 6rem; */
   text-align: center;
+  padding-block: 1rem;
 }
 
-.shop-content {
+.vlogs-content {
   background-color: #f1f0f0;
 }
 
-.shop-container {
-  /* background-color: #f1f0f0; */
+.vlogs-container {
   padding: 1rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.shop-cart {
+.vlogs-container > a {
+  color: unset;
+  text-decoration: none;
+}
+
+.vlogs-cart {
   width: 450px;
   padding: 1rem;
   margin: 1rem;
@@ -35,52 +31,37 @@
   border-radius: 10px;
 }
 
-.shop-cart-image {
+.vlogs-cart-image {
   background-color: gray;
   border-radius: 10px;
   flex: 1 450px;
 }
 
-.shop-cart-image > img {
+.vlogs-cart-image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.shop-cart-content {
+.vlogs-cart-content {
   margin-block: 1rem;
   max-height: 180px;
-  flex: 1 450px;
+  flex: 1 100px;
   overflow: hidden;
 }
 
 @media screen and (max-width: 500px) {
-  .shop-container {
-    padding-inline: 0.1rem;
+  .vlogs-container {
+    padding-inline: 0rem;
+    padding: 0rem;
   }
 
-  .shop-cart {
+  .vlogs-cart {
     margin-inline: 0;
+    overflow: hidden;
     width: 100vw;
   }
-}
-
-.shop-cart-content ul {
-  list-style-type: none;
-  list-style-position: outside;
-}
-
-.shop-cart-content ul > li {
-  margin-block: 1rem;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 3fr;
-  gap: 10px;
-}
-
-.shop-cart-content ul > li:first-child {
-  grid-template-columns: 1fr;
 }
 
 button {
@@ -89,14 +70,6 @@ button {
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 10px;
-}
-
-ul.shop-tag-container {
-  list-style-type: none;
-  list-style-position: outside;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 button.tag-active {
@@ -116,18 +89,19 @@ button:active {
 }
 
 @media screen and (max-width: 500px) {
-  #shop-container section {
+  #vlogs-container section {
     margin: 1rem 1rem;
   }
-  #shop-container section p {
+  #vlogs-container section p {
     width: auto;
   }
-  #shop-container .video-container {
+  #vlogs-container .video-container {
     height: auto;
   }
 
-  #shop-container > section {
-    margin-block: 1rem;
+  #vlogs-container > section {
+    margin-block: 0rem;
+    padding-block: 0.5rem;
     text-align: center;
   }
 }
